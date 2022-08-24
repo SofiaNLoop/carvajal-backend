@@ -21,6 +21,6 @@ app.use('/api/history', require('./routes/log_history/getLogHistory')); // Wish 
 app.use('/api/user', require('./routes/user/user')); // Wish List Methods
 
 // app.listen 4 use a port
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 3000 , () => {
     console.log(`App running in: http://127.0.0.0:${ process.env.PORT }` );
 })
